@@ -1,4 +1,8 @@
 /*********Classes**********/
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 #title {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s29081.pcdn.co/wp-content/uploads/2019/12/kawhagan-island-pamomoan-beach-03358.jpg.optimal.jpg");
   background-repeat: no-repeat;
@@ -8,22 +12,14 @@
   height: 100vh;
 }
 
-.bg {
-  background-color: red;
-}
-
-.bg2 {
-  background-color: blue;
-}
-
 .btn-dicover {
-  background-color: rgba(255, 254, 252, 0.1);
+  background-color: rgba(255, 254, 252, 0.03);
   border: 1px #fffefc solid;
   color: #fffefc;
   font-weight: 500;
-  letter-spacing: 8px;
-  margin-top: 25px;
-  padding: 18px 45px;
+  letter-spacing: 9px;
+  margin-top: 55px;
+  padding: 18px 35px;
 }
 
 .btn-dicover:hover {
@@ -34,33 +30,88 @@
   font-weight: 500;
 }
 
-.hero-title {
-  font-size: 4vw;
-  line-height: 2em;
+.hero-container {
+  margin: 20vh auto;
 }
 
 .hero-desc {
-  font-size: 1.3em;
-  font-weight: lighter;
+  font-size: 1.5em;
+  font-weight: light;
   text-shadow: 0 0 10px Black;
 }
 
+.hero-title {
+  font-family: 'New Tegomin', serif;
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.logo {
+  font-family: 'New Tegomin', serif;
+  font-weight: Bold;
+}
+
+
+/***************/
+
 /**Medium-size**/
 @media screen and (max-width: 992px) {
-  .hero-text {
-    width: 50%;
+  #title {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .hero-container {
+    margin: 12vh auto;
   }
 
   .hero-title {
-    font-size: 2.5em;
-    line-height: 1em;
+    font-size: 6vw;
+    line-height: 2em;
   }
 
   .hero-desc {
-    font-size: 1em;
-    font-weight: lighter;
+    font-size: 1.3em;
+    font-weight: light;
+  }
+
+  .btn-dicover {
+    font-size: .8em;
+    margin-top: 20px;
+    padding: 12px 20px;
   }
 }
 
 /**Small-size**/
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 576px) {
+  #title {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+  }
+
+  .btn-dicover {
+    font-size: .8em;
+    margin-top: 10px;
+    padding: 12px 20px;
+  }
+
+  .hero-container {
+    margin: 3vh auto;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 15vw;
+    line-height: 1.1em;
+  }
+
+  .hero-desc {
+    font-size: 1.2em;
+    font-weight: light;
+    line-height: 1.5em;
+  }
+}
